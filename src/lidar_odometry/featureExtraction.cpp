@@ -6,6 +6,7 @@ struct smoothness_t{
     size_t ind;   // 在extractedCloud中的index
 };
 
+// 曲率排序
 struct by_value{ 
     bool operator()(smoothness_t const &left, smoothness_t const &right) { 
         return left.value < right.value;
